@@ -1,0 +1,27 @@
+object frmFractalTree: TfrmFractalTree
+  Left = 629
+  Height = 857
+  Top = 162
+  Width = 1154
+  Caption = 'Symmetric Fractal blob'
+  ClientHeight = 857
+  ClientWidth = 1154
+  DesignTimePPI = 144
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '2.2.4.0'
+  object vsCanvas: TBGRAVirtualScreen
+    Left = 0
+    Height = 857
+    Top = 0
+    Width = 1154
+    OnRedraw = vsCanvasRedraw
+    Align = alClient
+    Alignment = taLeftJustify
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 0
+    OnMouseWheelDown = vsCanvasMouseWheelDown
+    OnMouseWheelUp = vsCanvasMouseWheelUp
+  end
+end
